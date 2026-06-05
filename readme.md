@@ -29,7 +29,7 @@ Antes de ejecutar el proyecto necesitas tener instalado:
 **1. Clona el repositorio**
 
 ```bash
-git clone https://github.com/TU_USUARIO/microchet.git
+git clone https://github.com/johnennn/microchet.git
 cd microchet
 ```
 
