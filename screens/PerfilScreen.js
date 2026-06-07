@@ -31,9 +31,9 @@ export default function PerfilScreen({ navigation }) {
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.hero}>
           <View style={styles.avatar}>
-            <Text style={styles.avatarText}>O</Text>
+            <Text style={styles.avatarText}>JT</Text>
           </View>
-          <Text style={styles.name}>Osvaldo Flores</Text>
+          <Text style={styles.name}>Javiera Torres Muñoz</Text>
           <Text style={styles.rut}>RUT 20.345.678-9</Text>
           <View style={styles.badges}>
             <View style={styles.badgeBlue}><Text style={styles.badgeBlueText}>Estudiante</Text></View>

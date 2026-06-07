@@ -37,11 +37,11 @@ export default function HomeScreen() {
         {/* Header */}
         <View style={styles.header}>
           <View>
-            <Text style={styles.greeting}>Buenos tardes,</Text>
-            <Text style={styles.name}>Osvaldo Flores</Text>
+            <Text style={styles.greeting}>Buenas tardes,</Text>
+            <Text style={styles.name}>Javiera Torres Muñoz</Text>
           </View>
           <View style={styles.avatar}>
-            <Text style={styles.avatarText}>O</Text>
+            <Text style={styles.avatarText}>JT</Text>
           </View>
         </View>
 
