@@ -10,6 +10,7 @@ import QRScreen from './screens/QRScreen';
 import HistorialScreen from './screens/HistorialScreen';
 import GastosScreen from './screens/GastosScreen';
 import PerfilScreen from './screens/PerfilScreen';
+import TarifasScreen from './screens/TarifasScreen';
 import DatosPersonalesScreen from './screens/perfil/DatosPersonalesScreen';
 import CertificadoScreen from './screens/perfil/CertificadoScreen';
 import MetodosPagoScreen from './screens/perfil/MetodosPagoScreen';
@@ -59,6 +60,7 @@ export default function App() {
               Viajes: 'map-outline',
               Validar: 'qr-code-outline',
               Gastos: 'bar-chart-outline',
+              Tarifas: 'pricetag-outline',
               Perfil: 'person-outline',
             };
             if (route.name === 'Validar') {
@@ -80,6 +82,7 @@ export default function App() {
         <Tab.Screen name="Inicio" component={HomeScreen} />
         <Tab.Screen name="Viajes" component={HistorialScreen} />
         <Tab.Screen name="Validar" component={QRScreen} />
+        <Tab.Screen name="Tarifas" component={TarifasScreen} />
         <Tab.Screen name="Gastos" component={GastosScreen} />
         <Tab.Screen name="Perfil" component={PerfilStack} />
       </Tab.Navigator>

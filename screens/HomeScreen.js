@@ -15,12 +15,6 @@ const quickActions = [
   { label: 'Mi perfil', icon: 'person-outline', bg: 'rgba(245,158,11,0.2)', color: '#FCD34D', tab: 'Perfil' },
 ];
 
-const tarifas = [
-  { tipo: 'Estudiante', precio: '$300', antes: '$200', icon: 'school-outline', bg: 'rgba(37,99,235,0.2)', color: '#60A5FA' },
-  { tipo: 'Adulto mayor', precio: '$450', antes: '$350', icon: 'heart-outline', bg: 'rgba(16,185,129,0.15)', color: '#34D399' },
-  { tipo: 'Trabajador', precio: '$850', antes: '$750', icon: 'briefcase-outline', bg: 'rgba(245,158,11,0.15)', color: '#FCD34D' },
-];
-
 const trips = [
   { route: 'Micro 612 — Viña centro', time: 'Hoy, 08:14 · Tarifa estudiante', price: '$300' },
   { route: 'Micro 801 — Valparaíso', time: 'Ayer, 17:52 · Tarifa estudiante', price: '$300' },
@@ -34,18 +28,16 @@ export default function HomeScreen() {
     <View style={styles.container}>
       <ScrollView style={styles.scroll} showsVerticalScrollIndicator={false}>
 
-        {/* Header */}
         <View style={styles.header}>
           <View>
-            <Text style={styles.greeting}>Buenas tardes,</Text>
-            <Text style={styles.name}>Javiera Torres Muñoz</Text>
+            <Text style={styles.greeting}>Buenos días,</Text>
+            <Text style={styles.name}>Javiera Torres</Text>
           </View>
           <View style={styles.avatar}>
             <Text style={styles.avatarText}>JT</Text>
           </View>
         </View>
 
-        {/* Balance Card */}
         <View style={styles.balanceCard}>
           <Text style={styles.balanceLabel}>Deuda acumulada</Text>
           <Text style={styles.balanceAmount}>$4.850</Text>
@@ -64,7 +56,6 @@ export default function HomeScreen() {
           </View>
         </View>
 
-        {/* Quick Actions */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Acceso rápido</Text>
           <View style={styles.actionGrid}>
@@ -79,31 +70,6 @@ export default function HomeScreen() {
           </View>
         </View>
 
-        {/* Tarifas */}
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Tarifas Microchet</Text>
-          <View style={styles.tarifaInfo}>
-            <Ionicons name="information-circle-outline" size={14} color="#60A5FA" />
-            <Text style={styles.tarifaInfoText}>Incluye comisión de servicio digital de $100</Text>
-          </View>
-          {tarifas.map((t) => (
-            <View key={t.tipo} style={styles.tarifaCard}>
-              <View style={[styles.tarifaIcon, { backgroundColor: t.bg }]}>
-                <Ionicons name={t.icon} size={20} color={t.color} />
-              </View>
-              <View style={styles.tarifaInfo2}>
-                <Text style={styles.tarifaTipo}>{t.tipo}</Text>
-                <Text style={styles.tarifaAntes}>Tarifa tradicional: {t.antes}</Text>
-              </View>
-              <View style={styles.tarifaPrecioBox}>
-                <Text style={styles.tarifaPrecio}>{t.precio}</Text>
-                <Text style={styles.tarifaPreciSub}>por viaje</Text>
-              </View>
-            </View>
-          ))}
-        </View>
-
-        {/* Recent Trips */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Últimos viajes</Text>
           {trips.map((trip, i) => (
@@ -146,16 +112,6 @@ const styles = StyleSheet.create({
   actionItem: { alignItems: 'center', gap: 8, width: '22%' },
   actionIcon: { width: 52, height: 52, borderRadius: 16, justifyContent: 'center', alignItems: 'center' },
   actionLabel: { fontSize: 11, color: COLORS.gray, textAlign: 'center' },
-  tarifaInfo: { flexDirection: 'row', alignItems: 'center', gap: 6, marginBottom: 10, backgroundColor: 'rgba(37,99,235,0.1)', padding: 8, borderRadius: 8 },
-  tarifaInfoText: { fontSize: 11, color: 'rgba(255,255,255,0.5)' },
-  tarifaCard: { flexDirection: 'row', alignItems: 'center', gap: 12, backgroundColor: 'rgba(255,255,255,0.04)', borderRadius: 14, padding: 14, marginBottom: 8, borderWidth: 0.5, borderColor: COLORS.border },
-  tarifaIcon: { width: 42, height: 42, borderRadius: 12, justifyContent: 'center', alignItems: 'center', flexShrink: 0 },
-  tarifaInfo2: { flex: 1 },
-  tarifaTipo: { fontSize: 14, fontWeight: '500', color: COLORS.white },
-  tarifaAntes: { fontSize: 11, color: COLORS.gray, marginTop: 2 },
-  tarifaPrecioBox: { alignItems: 'flex-end' },
-  tarifaPrecio: { fontSize: 18, fontWeight: '500', color: COLORS.white },
-  tarifaPreciSub: { fontSize: 10, color: COLORS.gray, marginTop: 1 },
   tripItem: { flexDirection: 'row', alignItems: 'center', gap: 12, paddingVertical: 12, borderBottomWidth: 0.5, borderBottomColor: COLORS.border },
   tripIcon: { width: 40, height: 40, borderRadius: 12, backgroundColor: 'rgba(37,99,235,0.2)', justifyContent: 'center', alignItems: 'center' },
   tripInfo: { flex: 1 },

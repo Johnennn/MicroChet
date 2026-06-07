@@ -11,11 +11,11 @@ const COLORS = {
 const filters = ['Todos', 'Esta semana', 'Este mes', 'Pagados', 'Pendientes'];
 
 const allTrips = [
-  { route: 'Micro 612 — Viña centro', meta: 'Hoy 08:14 · Recorrido 612', price: '$280', paid: false, week: true, month: true },
-  { route: 'Micro 801 — Valparaíso', meta: 'Ayer 17:52 · Recorrido 801', price: '$280', paid: false, week: true, month: true },
-  { route: 'Micro 612 — Agua Santa', meta: 'Lun 26, 07:38 · Recorrido 612', price: '$280', paid: false, week: true, month: true },
-  { route: 'Micro 612 — Viña centro', meta: 'Vie 31, 18:10 · Recorrido 612', price: '$280', paid: true, week: false, month: true },
-  { route: 'Micro 801 — Valparaíso', meta: 'Jue 30, 08:05 · Recorrido 801', price: '$280', paid: true, week: false, month: true },
+  { route: 'Micro 612 — Viña centro', meta: 'Hoy 08:14 · Recorrido 612', price: '$300', paid: false, week: true, month: true },
+  { route: 'Micro 801 — Valparaíso', meta: 'Ayer 17:52 · Recorrido 801', price: '$300', paid: false, week: true, month: true },
+  { route: 'Micro 612 — Agua Santa', meta: 'Lun 26, 07:38 · Recorrido 612', price: '$300', paid: false, week: true, month: true },
+  { route: 'Micro 612 — Viña centro', meta: 'Vie 31, 18:10 · Recorrido 612', price: '$300', paid: true, week: false, month: true },
+  { route: 'Micro 801 — Valparaíso', meta: 'Jue 30, 08:05 · Recorrido 801', price: '$300', paid: true, week: false, month: true },
 ];
 
 export default function HistorialScreen() {
